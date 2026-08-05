@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Specificity</title>
+</head>
+<style>
+    .abc{
+        color: aqua;
+    }
+    .abcd{
+        color: blueviolet;
+    }
+    .abcde{
+        color: blue;
+    }
+</style>
+<body>
+    <H1 class="abc abcd abcde">
+        This is the Heading 1
+    </H1>
+    <h4>
+        priorities of specificity
+    </h4>
+    <ol>
+        <li>Inline value=1000/li>
+        <li>ID selector value=100</li>
+        <li>Class and attributes/psudeo selector value=10</li>
+        <li>element selector value=1</li>
+        <li>Universal selector value=0</li>
+    </ol>
+</body>
+</html>

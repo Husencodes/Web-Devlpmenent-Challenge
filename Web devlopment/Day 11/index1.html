@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sizing units</title>
+</head>
+<style>
+    html{
+        font-size:10 ;   
+     }
+        *{
+            margin: auto;
+            padding: 0;
+            
+        }
+        .box{
+           
+            border:3px solid black;
+            /* width: 1520px; */
+            width: 80vw;
+            background-color: aqua;
+            box-sizing: border-box;
+            
+        }
+        .Container{
+                border: 3px solid black;
+                width: 50%;
+                height: 50vh;
+                font-size: 16px;
+                background-color: aquamarine;
+        }
+        .Container p span{
+            border: 1px solid blue;
+        }
+        .p{
+                    font-size: 2rem;
+        }
+        .husen{
+            border: solid black 3px;
+            background-color: aquamarine;
+            width: 80vw;
+            min-height: 80vw;
+        }
+
+        
+</style>
+<body>
+    
+    <h1 class="box">This is a box</h1>
+
+    <div class="Container">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure quis est laudantium ut, cumque consectetur! Quod consequuntur totam rem, perspiciatis placeat quas incidunt commodi sequi.
+            <span>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique eligendi distinctio doloribus magni voluptas, eum repudiandae numquam quo ullam aspernatur consectetur inventore alias, sapiente nulla?
+            </span>
+            </p>
+    </div>
+    <div class="husen">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis qui omnis dolorem officia fugiat natus, praesentium dicta harum est numquam error voluptates facere neque laudantium..
+    </div>
+</body>
+</html>
