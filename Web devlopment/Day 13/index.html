@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Properties</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .imgs {
+            margin: 10px;
+            padding: 10px;
+            border: 5px solid black;
+            height: 8000px;
+        }
+
+        .img2 {
+            /* position: relative;
+            top: 25px; */
+            position: absolute;
+            top: 25px;
+        }
+
+        .img1 {
+            /* position: fixed; */
+            /* position: sticky;
+            top: 0; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="imgs">
+        <img src="Day 1.png" alt="img 1" width="300" height="300" class="img1">
+        <img src="Day 2.png" alt="img 2" width="300" height="300" class="img2">
+        <img src="Day 10.png" alt="img 3" width="300" height="300" class="img3">
+        <img src="Day 11.png" alt="img 4" width="300" height="300" class="img4">
+    </div>
+</body>
+
+</html>
