@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            box-sizing: border-box;
+            background-image: url(img.png);
+            height: 600px;
+            width: 1400px;
+            background-size: contain;
+            background-repeat: repeat;
+        }
+    .box{
+        width: 200px;
+        height: 50px;
+        border: 2px solid black;
+        border-radius: 25px;
+        text-align: center;
+        margin: 25px;
+        background-color: blue;
+        color: white;
+        position: relative;
+        animation: movement 10s 0s infinite alternate ;
+      
+    }
+    @keyframes movement {
+        from {
+            top: 0;
+            left: 0;
+        }
+        to{
+            top: 0;
+            left: 1100px;
+        }
+        
+    }
+    .box2{
+        width: 200px;
+        height: 50px;
+        border: 2px solid black;
+        border-radius: 25px;
+        text-align: center;
+        margin: 25px;
+        background-color: blue;
+        color: white;
+        position: relative;
+        animation: reverses 10s 0s infinite alternate ;
+      
+    }
+    @keyframes reverses {
+        from {
+            top: 500px;
+            left: 1100px;
+        }
+        to{
+            top: 500px;
+            left: 0;
+        }
+        
+    }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="box">Welcome</div>
+    <div class="box2">Thankyou</div>
+    </div>
+</body>
+</html>
