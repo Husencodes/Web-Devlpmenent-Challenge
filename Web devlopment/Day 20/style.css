@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: none;
+}
+body{
+    background-image: url(bg.png);
+}
+
+.conatiner {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background-image: url("bg.png");
+     position: sticky;
+    top: 0;
+}
+    
+
+
+
+.navbox {
+    width: 100vw;
+    height: 15vh;
+    border: 2px solid black;
+    display: flex;
+    /* justify-content: space-around; */
+    background: #833AB4;
+    background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+    
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2.5rem;
+    gap: 325px;
+
+
+}
+
+.logo {
+    font-size: 3rem;
+    color: rgb(234, 242, 5);
+
+
+}
+
+a {
+    text-decoration: none;
+    color: azure;
+    /* display: flex; */
+    /* justify-content: space-between; */
+}
+
+.content1 {
+    width: 60vw;
+      height: 70vh;
+    border: 2.5px solid black;
+    margin: auto;
+    /* display: flex; */
+    /* justify-content: space-around; */
+    list-style-position: inside;
+    box-shadow: 5px 9px 61px 33px rgba(0, 0, 0, 0.24);
+    border-radius: 20px;
+    overflow-y: scroll;
+    /* color: aliceblue;
+    font-weight: 700; */
+    background-color:white;
+
+}
+
+img {
+    float: right;
+    border-radius: 25px;
+    padding: auto;
+    width: 200px;
+    height: 200px;
+}
+.content2{
+    width: 60vw;
+    height: 70vh;
+    border: 2.5px solid black;
+    margin: auto;
+    /* display: flex; */
+    /* justify-content: space-around; */
+    list-style-position: inside;
+    box-shadow: 5px 9px 61px 33px rgba(0, 0, 0, 0.24);
+    border-radius: 20px;
+    overflow-y: scroll;
+    background-color:white;
+}
+.content3{
+    width: 60vw;
+    height: 70vh;
+    border: 2.5px solid black;
+    margin: auto;
+    /* display: flex; */
+    /* justify-content: space-around; */
+    list-style-position: inside;
+    box-shadow: 5px 9px 61px 33px rgba(0, 0, 0, 0.24);
+    border-radius: 20px;
+    overflow-y: scroll;
+    background-color:white;
+}
+h2{
+    color: rgb(107, 50, 172);
+}
+.items{
+    display: flex;
+    column-gap: 25px;
+    padding: 25px;
+}
+.items2{
+    display: flex;
+    column-gap: 25px;
+    padding: 25px;
+}
+
+
+   
