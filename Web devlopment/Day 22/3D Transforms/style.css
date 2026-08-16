@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    background-color: rgb(54, 42, 42);
+    height:100%;
+    width: 100%;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(3,1fr);
+    padding: 2rem;
+}
+.item{
+    border: 2px solid black;
+    width: 150px;
+    height: 150px;
+    background-color: aqua;
+}
+
+#RotateX:hover{
+ transform: rotateX(45deg);
+}
+#RotateY:hover{
+ transform: rotateY(45deg);
+}
+#RotateZ:hover{
+ transform: rotateZ(45deg);
+}
+#TranslateX:hover{
+ transform: TranslateX(100px);
+}
+#TranslateY:hover{
+ transform: TranslateY(100px);
+}
+#TranslateZ:hover{
+ transform:perspective(300px) TranslateZ(100px);
+}
+#ScaleZ:hover{
+    transform: perspective(500px) scaleZ(5) rotateY(45deg);
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More selectors on css</title>
+    <style>
+        .container::first-letter{
+            color: aqua;
+            font-size: 25px;
+        }
+         /* [data-color=primary]{
+            color: brown;
+         } */
+          .container::before{
+            content:"HI Im finishing";
+          }
+          .container::after{
+            content:"HI Im finishing";
+          }
+          ::selection{
+            color: aqua;
+            background-color: brown;
+          }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div data-color="primary" class="box1">Aaaaaa</div>
+        <div class="box2">Baaaaa</div>
+        <div class="box3">Cccccc</div>
+        <div class="box4">Dddddd</div>
+        <div class="box5">Eeeeee</div>
+    </div>
+</body>
+</html>
