@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Name Generator</title>
+</head>
+<body>
+
+    <h1>Business Name Generator</h1>
+    <!--Mini project 04-->
+    <script>
+
+         random= Math.random()
+        let first,second,third;
+
+        //Generating first name
+        if(random<0.33){
+            first="Digital";
+        }
+
+        else if(random<0.66 && random>=0.33){
+            first="Smart";
+        }
+        else{
+            first= "Modern";
+        }
+
+         //Generating second name
+           random= Math.random()
+        if(random<0.33){
+            second= "Business";
+        }
+
+        else if(random<0.66 && random>=0.33){
+            second= "Service";
+        }
+        else{
+            second= " Best";
+        }
+
+            //Generating third name
+             random= Math.random()
+        if(random<0.33){
+            third=" Hub";
+        }
+
+        else if(random<0.66 && random>=0.33){
+            third=  "Solutions";
+        }
+        else{
+            third=   " Center";
+        }
+        console.log(`${first}  ${second} ${third}` )
+
+    </script>
+</body>
+</html>
+
+
+<!--
+1.
+    digital
+    smart
+    modern
+
+2.
+    Business
+    service
+    best
+
+3.
+    Hub
+    Solutions
+    Center
+-->
