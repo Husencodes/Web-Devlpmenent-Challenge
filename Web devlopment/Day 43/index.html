@@ -1,0 +1,635 @@
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Revision</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+## 1. CSS Basics
+
+### What is CSS?
+**CSS (Cascading Style Sheets)** is a stylesheet language used to **style and design HTML elements** and control the layout and appearance of web pages.
+
+### Ways to add CSS
+
+**1. Inline CSS**
+```html
+<p style="color: red;">Hello</p>
+```
+
+**2. Internal CSS**
+```html
+<style>
+  p {
+    color: red;
+  }
+</style>
+```
+
+**3. External CSS**
+```html
+<link rel="stylesheet" href="style.css">
+```
+
+✅ **Best practice:** External CSS.
+
+---
+
+# 2. CSS Syntax
+
+```css
+selector {
+    property: value;
+}
+```
+
+Example:
+
+```css
+h1 {
+    color: blue;
+    font-size: 30px;
+}
+```
+
+- `h1` → Selector
+- `color` → Property
+- `blue` → Value
+
+---
+
+# 3. CSS Selectors
+
+### Element Selector
+```css
+p {
+    color: red;
+}
+```
+
+### Class Selector
+```css
+.box {
+    background-color: yellow;
+}
+```
+
+```html
+<div class="box"></div>
+```
+
+### ID Selector
+```css
+#heading {
+    color: green;
+}
+```
+
+### Universal Selector
+```css
+* {
+    margin: 0;
+    padding: 0;
+}
+```
+
+### Group Selector
+```css
+h1, h2, p {
+    color: blue;
+}
+```
+
+### Descendant Selector
+```css
+div p {
+    color: red;
+}
+```
+
+### Child Selector
+```css
+div > p {
+    color: red;
+}
+```
+
+---
+
+# 4. CSS Colors & Backgrounds
+
+```css
+.box {
+    color: white;
+    background-color: black;
+}
+```
+
+Background image:
+
+```css
+body {
+    background-image: url("image.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+```
+
+Important properties:
+
+- `background-color`
+- `background-image`
+- `background-size`
+- `background-position`
+- `background-repeat`
+- `background-attachment`
+
+---
+
+# 5. CSS Box Model ⭐
+
+Every HTML element can be understood as:
+
+**Content → Padding → Border → Margin**
+
+```css
+.box {
+    width: 200px;
+    padding: 20px;
+    border: 2px solid black;
+    margin: 30px;
+}
+```
+
+### Remember:
+
+- **Content** → actual text/image
+- **Padding** → space inside the element
+- **Border** → boundary
+- **Margin** → space outside the element
+
+### `box-sizing`
+
+```css
+* {
+    box-sizing: border-box;
+}
+```
+
+This makes width/height calculations easier because padding and border are included in the declared size.
+
+---
+
+# 6. Width & Height
+
+```css
+.box {
+    width: 300px;
+    height: 200px;
+}
+```
+
+Useful units:
+
+### Absolute
+```css
+px
+```
+
+### Relative
+```css
+%
+em
+rem
+vw
+vh
+```
+
+Example:
+
+```css
+.container {
+    width: 80%;
+    min-height: 100vh;
+}
+```
+
+---
+
+# 7. Typography
+
+Important properties:
+
+```css
+p {
+    font-family: Arial;
+    font-size: 18px;
+    font-weight: bold;
+    font-style: italic;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    text-align: center;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+```
+
+---
+
+# 8. Display Property ⭐
+
+### Block
+
+```css
+div {
+    display: block;
+}
+```
+
+Takes the available width and normally starts on a new line.
+
+### Inline
+
+```css
+span {
+    display: inline;
+}
+```
+
+Usually occupies only the required content width.
+
+### Inline-block
+
+```css
+span {
+    display: inline-block;
+}
+```
+
+Allows an inline-level element to have width, height, padding, etc.
+
+### None
+
+```css
+.box {
+    display: none;
+}
+```
+
+The element is removed from the layout.
+
+---
+
+# 9. Position Property ⭐
+
+```css
+position: static;
+position: relative;
+position: absolute;
+position: fixed;
+position: sticky;
+```
+
+### Relative
+
+```css
+.box {
+    position: relative;
+    top: 20px;
+}
+```
+
+### Absolute
+
+```css
+.child {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+```
+
+An absolutely positioned element is positioned relative to an appropriate positioned ancestor.
+
+### Fixed
+
+```css
+button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+```
+
+Remains fixed relative to the viewport.
+
+### Sticky
+
+```css
+header {
+    position: sticky;
+    top: 0;
+}
+```
+
+Useful for sticky navigation.
+
+---
+
+# 10. Flexbox ⭐⭐⭐
+
+One of the most important CSS topics.
+
+```css
+.container {
+    display: flex;
+}
+```
+
+Important properties:
+
+```css
+flex-direction
+justify-content
+align-items
+align-content
+flex-wrap
+gap
+```
+
+Example:
+
+```css
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+```
+
+### Main Axis vs Cross Axis
+
+```text
+justify-content → Main Axis
+align-items     → Cross Axis
+```
+
+Common values:
+
+```css
+justify-content: center;
+justify-content: space-between;
+justify-content: space-around;
+justify-content: space-evenly;
+
+align-items: center;
+```
+
+---
+
+# 11. CSS Grid ⭐⭐⭐
+
+Grid is useful for two-dimensional layouts.
+
+```css
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+```
+
+Example:
+
+```css
+.container {
+    display: grid;
+    grid-template-columns: 200px 1fr 200px;
+}
+```
+
+Important properties:
+
+- `grid-template-columns`
+- `grid-template-rows`
+- `gap`
+- `grid-column`
+- `grid-row`
+
+---
+
+# 12. Pseudo-classes
+
+Used to style an element in a particular state.
+
+```css
+button:hover {
+    background-color: blue;
+}
+```
+
+Important pseudo-classes:
+
+```css
+:hover
+:active
+:focus
+:first-child
+:last-child
+:nth-child()
+```
+
+Example:
+
+```css
+input:focus {
+    border-color: blue;
+}
+```
+
+---
+
+# 13. Pseudo-elements
+
+Used to style a specific part of an element or generate content.
+
+```css
+p::first-letter {
+    font-size: 30px;
+}
+```
+
+Common ones:
+
+```css
+::before
+::after
+::first-letter
+::first-line
+```
+
+Example:
+
+```css
+.box::before {
+    content: "★";
+}
+```
+
+---
+
+# 14. CSS Specificity ⭐
+
+When multiple CSS rules target the same element, **specificity helps determine which rule wins**.
+
+General order:
+
+```text
+Inline
+   ↓
+ID
+   ↓
+Class / Attribute / Pseudo-class
+   ↓
+Element / Pseudo-element
+```
+
+Example:
+
+```css
+p {
+    color: red;
+}
+
+.text {
+    color: blue;
+}
+
+#para {
+    color: green;
+}
+```
+
+```html
+<p id="para" class="text">Hello</p>
+```
+
+The ID rule has higher specificity than the class and element rules.
+
+---
+
+# 15. Cascade & `!important`
+
+```css
+p {
+    color: red !important;
+}
+```
+
+`!important` gives a declaration very high priority, but **avoid using it unnecessarily**.
+
+---
+
+# 16. CSS Transitions ⭐
+
+Transitions create smooth changes.
+
+```css
+button {
+    background: black;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: blue;
+}
+```
+
+More explicitly:
+
+```css
+button {
+    transition: background-color 0.3s ease,
+                transform 0.3s ease;
+}
+```
+
+---
+
+# 17. CSS Transform
+
+```css
+transform: translateX(20px);
+transform: translateY(20px);
+transform: scale(1.2);
+transform: rotate(45deg);
+```
+
+Example:
+
+```css
+.card:hover {
+    transform: translateY(-10px);
+}
+```
+
+---
+
+# 18. CSS Animations
+
+```css
+.box {
+    animation: move 2s infinite;
+}
+
+@keyframes move {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(200px);
+    }
+}
+```
+
+Important animation properties:
+
+```css
+animation-name
+animation-duration
+animation-delay
+animation-iteration-count
+animation-direction
+animation-timing-function
+```
+
+---
+
+# 19. Responsive Design ⭐⭐⭐
+
+Responsive design makes a website work across different screen sizes.
+
+### Media Query
+
+```css
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+}
+```
+
+
+</body>
+</html>
+
+
+
+
