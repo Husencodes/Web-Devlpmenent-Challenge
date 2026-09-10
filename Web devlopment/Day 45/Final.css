@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+     background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+}
+
+.container{
+ background-color: var(--bg-color);
+            color: var(--text-main);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            position: relative;
+         
+}
+.largebox{
+    width: 90%;
+max-width: 500px;
+    height: 75vh;
+    border: 2px solid black;
+    margin-top: 25px;
+    transform: scale(0.9);
+    text-align: center;
+    font-size: 25px;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5), 0 0 50px rgba(56, 189, 248, 0.25);
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   animation: popIn 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+      flex-wrap: wrap;
+}
+
+        @keyframes popIn {
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+img{
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    margin-top: 45px;
+   
+}
+.Github{
+   margin-top: 15px;
+   
+
+   
+}
+.txt2{
+    margin-top: 25px;
+}
+.btn{
+     cursor: pointer;
+    background-color: black;
+    color: white;
+    
+    border-radius: 8px;
+    width: 250px;
+    height: 35px;
+     border: none;
+     transition: all 0.2s ease;
+            box-shadow: 0 4px 14px 0 rgba(37, 99, 235, 0.39);
+        }
+
+.btn a{
+    color: white;
+        text-decoration: none;
+    font-size: 15px;
+     
+}
+.btn1 a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+.btn1{
+    width: 250px;
+    height: 35px;
+   background-color: blue;
+   color: aliceblue;
+    border-radius: 8px;
+    cursor: pointer;
+      border: none;
+      transition: all 0.2s ease;
+            box-shadow: 0 4px 14px 0 rgba(37, 99, 235, 0.39);
+        }
+
+.linkdien{
+    margin-top: 15px;
+     padding: 10px 20px;
+     color: aliceblue;
+     cursor: pointer;
+      border: none;
+}
+.btn2{
+   width: 290px;
+    height: 35px;
+   background-color: blue;
+   color: aliceblue;
+    border-radius: 8px;
+   
+}
+.Celebrate{
+    margin-top: 45px;
+  
+}
+.Celebrate button{
+  font-size: 15px;
+  cursor: pointer;
+   background: linear-gradient(135deg, #38bdf8, #2563eb);
+   border: none;
+   transition: all 0.2s ease;
+    box-shadow: 0 4px 14px 0 rgba(37, 99, 235, 0.39);
+
+        
+}
+.Celebrate button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px 0 rgba(37, 99, 235, 0.5);
+        }
+ .Celebrate button:active {
+            transform: translateY(0);
+        }
+        .Github button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px 0 rgba(37, 99, 235, 0.5);
+        }
+        .linkdien button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px 0 rgba(37, 99, 235, 0.5);
+        }
+        .largebox1 img:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px 0 rgba(37, 99, 235, 0.5);
+        }
+        
+        .txt3{
+            display: flex;
+            justify-content: center;
+            font-size: 35px;
+           margin-bottom: 25PX;
+          margin-top: px;
+          
+        }
+        .boxes{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+
+            
+        }
+        .smallbox{
+            border: 2px solid black;
+            width: 250px;
+            height: 200px;
+            border-radius: 25px;
+            /* display: flex;
+            justify-content: center; */
+            font-size: 20PX;
+            text-align: center;
+            margin-right: 15px;
+            box-shadow: 0 6px 20px 0 rgba(37, 99, 235, 0.5);
+        }
+
+.smallbox:hover{
+     transform: translateY(-2px);
+     box-shadow: 0 6px 20px 0 rgba(37, 99, 235, 0.5);
+}
+.smallbox:active {
+            transform: translateY(0);
+        }
+    .ups a{
+        text-decoration: none;
+    }
+    .ups button{
+    width: 100px;
+    height: 35px;
+   background-color: rgb(91, 91, 179);
+   color: aliceblue;
+    border-radius: 8px;
+    border: none;
+    margin-top: 35px;
+    background-image: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+    
+    }
+.ups a{
+    color: azure;
+}
+.ups button:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 4px 14px 0 rgba(76, 108, 176, 0.39);
+}
