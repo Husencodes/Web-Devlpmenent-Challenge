@@ -3,22 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Final Day</title>
-    <link rel="stylesheet" href="style.css">
-    
+    <title>Final Dayy!</title>
+    <link rel="stylesheet" href="Final.css">
 </head>
 <body>
-    <h1>Challenge is Completed</h1>
-    <h2>Day 45</h2>
-    <p>In upcoming days Working on Projects</p>
-    <h3><strong>Upcoming</strong></h3>
-    <ol>
-        <li>5 Large Projects </li>
-        <li>React challenge</li>
-        <li>Python</li>
-        <li>DSA</li>
-        <li>AI</li>
-    </ol>
-    <script src="script.js"></script>
+    <div class="container">
+        <div class="largebox">Web Devlopment Challenge Completed! 🥳
+            <div class="largebox1"><img src="Photo.png" alt="Github" ></div>
+            <div class="txt2"><h5>----Explore----</h5>
+            </div>
+            <div class="Github">
+                <button class="btn"> <a href="https://github.com/Husencodes/Web-Devlpmenent-Challenge/tree/main/Web%20devlopment" target="_blank">Github</a></button>               
+            </div>
+            <div class="linkdien">
+               <button class="btn1"> <a href="https://www.linkedin.com/in/imhusen/" target="_blank">Linkdien</a></button>
+            </div>
+            <div class="Celebrate"><button class="btn2" onclick="fireBlast()">Celebrate🥳</button></div>
+            <div class="ups"><button ><a href="#Upocoming"><b>Upcoming.......</b></a></button></div>
+        </div>
+        
+    </div>
+    <div class="Container2">
+        <div class="txt3">----Upcoming----</div>
+        <div class="boxes" id="Upocoming">
+           <div class="smallbox">DBMS <hr>
+        <img src="DBMS.jpg" alt="Database">
+    </div>
+            <div class="smallbox " id="1">React <hr>
+            <img src="react.png" alt="react">
+            </div>
+            
+            <div class="smallbox" id="2">5 Large Projects <hr>
+            <img src="pro.jpg" alt="Projects">
+            </div>
+            <div class="smallbox" id="3">Python<hr>
+            <img src="py.jpg" alt="Python">
+            </div>
+            <div class="smallbox" id="4">DSA<hr>
+            <img src="dsa.png" alt="DSA">
+            </div>
+            <div class="smallbox" id="5">AI/ML<hr>
+            <img src="aiml.jpg" alt="AI/ML">
+            </div>
+            
+        </div>
+        
+    </div>
+   <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+     <script>
+        // Trigger celebration blast on page load
+        window.addEventListener('DOMContentLoaded', () => {
+            setTimeout(fireBlast, 300);
+        });
+
+        function fireBlast() {
+            // Left fireworks
+            confetti({
+                particleCount: 250,
+                angle: 60,
+                spread: 55,
+                origin: { x: 0, y: 0.7 }
+            });
+            // Right fireworks
+            confetti({
+                particleCount: 250,
+                angle: 120,
+                spread: 55,
+                origin: { x: 1, y: 0.7 }
+            });
+            // Center big burst
+            setTimeout(() => {
+                confetti({
+                    particleCount: 250,
+                    spread: 100,
+                    origin: { y: 0.6 }
+                });
+            }, 250);
+        }
+        </script>
+
 </body>
 </html>
